@@ -1,15 +1,14 @@
+# House Price Prediction (Basic ML Project)
 
-# 🏠 House Price Prediction using Machine Learning
+## About the Project
 
-## 📌 Overview
+This is a simple machine learning project where I tried to predict house prices based on a few factors like area, number of bedrooms, and age of the house.
 
-This project is a simple Machine Learning model built using Python to predict house prices based on basic features like area, number of bedrooms, and age of the house.
-
-The goal of this project is to understand the **end-to-end workflow of a basic ML model**, including data handling, training, evaluation, and making predictions.
+The main goal of this project was to understand how a basic ML model works from start to finish.
 
 ---
 
-## ⚙️ Technologies Used
+## Tools Used
 
 * Python
 * pandas
@@ -18,43 +17,41 @@ The goal of this project is to understand the **end-to-end workflow of a basic M
 
 ---
 
-## 📂 Dataset
+## Dataset
 
-The dataset used is a small CSV file (`house_data.csv`) containing:
+I used a small dataset (`house_data.csv`) which contains:
 
-| Feature  | Description               |
-| -------- | ------------------------- |
-| area     | Size of the house (sq ft) |
-| bedrooms | Number of bedrooms        |
-| age      | Age of the house (years)  |
-| price    | House price (target)      |
+* area (in sq ft)
+* bedrooms
+* age
+* price
 
 ---
 
-## 🚀 How It Works
+## What the Code Does
 
-1. Load the dataset using pandas
-2. Split the data into training and testing sets
-3. Train a Linear Regression model
-4. Evaluate the model using:
+* Reads the dataset
+* Splits it into training and testing data
+* Trains a Linear Regression model
+* Checks how well the model performs using:
 
-   * Mean Squared Error (MSE)
-   * Root Mean Squared Error (RMSE)
-   * R² Score
-5. Take user input and predict house price
-
----
-
-## 📊 Model Performance
-
-* R² Score: ~0.97
-* RMSE: ~8000
-
-> Note: Since the dataset is very small, these values may vary slightly depending on the data split.
+  * MSE
+  * RMSE
+  * R² score
+* Takes user input and predicts house price
 
 ---
 
-## ▶️ How to Run
+## Results
+
+* R² Score is around **0.97**
+* RMSE is around **8000**
+
+Since the dataset is very small, results may change slightly if the data split changes.
+
+---
+
+## How to Run
 
 1. Install required libraries:
 
@@ -62,25 +59,27 @@ The dataset used is a small CSV file (`house_data.csv`) containing:
 pip install pandas numpy scikit-learn
 ```
 
-2. Place `house_data.csv` in the same folder as the Python file
+2. Keep the `house_data.csv` file in the same folder
 
-3. Run the program:
+3. Run the Python file:
 
 ```bash
-python your_file_name.py
+python filename.py
 ```
 
 ---
 
-## 🧪 Example Input
+## Example
+
+Input:
 
 ```
-Area: 1300
-Bedrooms: 3
-Age: 6
+Area: 1300  
+Bedrooms: 3  
+Age: 6  
 ```
 
-### Output:
+Output:
 
 ```
 Predicted Price: ₹263,787
@@ -88,43 +87,35 @@ Predicted Price: ₹263,787
 
 ---
 
-## ⚠️ Limitations
+## Limitations
 
-* Works only within this range:
+* Works only within these ranges:
 
-  * Area: 800–2000 sq ft
+  * Area: 800–2000
   * Bedrooms: 1–4
-  * Age: 1–15 years
-* Small dataset (only a few entries)
-* Not suitable for real-world pricing
+  * Age: 1–15
+* Very small dataset
+* Not accurate for real-world use
 
 ---
 
-## 🎯 Learning Outcomes
+## What I Learned
 
-* Understanding of basic ML workflow
-* Data preprocessing and splitting
-* Model training using Linear Regression
-* Evaluating model performance
-* Taking user input for predictions
-
----
-
-## 📌 Future Improvements
-
-* Use a larger dataset
-* Add more features (location, bathrooms, etc.)
-* Try advanced models (Decision Trees, Random Forest)
-* Build a GUI or web app
+* Basic ML workflow
+* How to train a model
+* How to evaluate it
+* How to take input and make predictions
 
 ---
 
-## 👨‍💻 Author
+## Future Improvements
 
-Jaswanth Kumar
+* Use a bigger dataset
+* Add more features
+* Try other models
 
 ---
 
-## ⭐ Note
+## Author
 
-This is a beginner-level project created for learning purposes and does not represent real-world pricing accuracy.
+Your Name
